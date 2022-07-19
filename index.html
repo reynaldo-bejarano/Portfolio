@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <!-- javascript -->
+    <script src="javascript/app.js" defer></script>
+    <title>Portfolio | Reynaldo Bejarano</title>
+  </head>
+  <body>
+    <!---------------------------------- Header------------------------------------->
+    <div class="arrow d-none" id="arrow">
+      <a href="#">
+        <i class="bx bx-chevron-up arrow-icon"></i>
+      </a>
+    </div>
+
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="#" class="nav__logo">Frontend Engineer</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link line">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!---------------------------------- hero ------------------------------------->
+    <section>
+      <div class="hero">
+        <div class="hero__content">
+          <p class="hero__text">Hello & Welcome</p>
+          <h1 class="hero__title">
+            <strong class="maquine-writer">I'm Reynaldo Bejarano</strong>
+          </h1>
+          <p class="hero__text">I build things for the web</p>
+          <div class="hero__icons">
+            <a
+              href="https://www.facebook.com/reynaldo.bejarano/"
+              target="_blank"
+              class="hero__link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/rbjsz24/"
+              target="_blank"
+              class="hero__link"
+            >
+              <i class="bx bxl-instagram"></i
+            ></a>
+
+            <a
+              href="https://www.linkedin.com/in/reynaldo-bejarano/"
+              target="_blank"
+              class="hero__link"
+            >
+              <i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a
+              href="https://github.com/reynaldo-bejarano?tab=repositories"
+              target="_blank"
+              class="hero__link"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+          <a class="hero__btn" href="resume.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------- About ------------------------------------->
+
+    <section class="about section container" id="about">
+      <div class="about__container d-grid">
+        <div class="about__data">
+          <h2 class="about__title">Some things<strong> about me!</strong></h2>
+          <p class="about__text">
+            Hi! My name is Reynaldo Bejarano and I enjoy creating things that
+            live on the web.
+            <strong class="alert"
+              >My interest in web development started in 2020 while studying
+              computer engineering</strong
+            >
+            - spending many hours watching tutorials on YouTube and other
+            platforms taught me a lot about HTML and CSS!
+          </p>
+          <p class="about__text">
+            Currently pursuing a bachelor's degree in computer engineering (May
+            2023) with experience in Front-end development:
+            <strong class="alert"
+              >HTML, CSS, JavaScript, React JS, Frameworks CSS, Firebase</strong
+            >
+            . Looking for an internship or a job in a technology company to
+            expand Front-end development knowledge and gain professional
+            experience.
+          </p>
+          <p class="about__text">
+            VS Code | Creative Solutions | English / Spanish | Responsive Design
+          </p>
+        </div>
+        <img class="about__img" src="images/under.png" alt="me" />
+      </div>
+    </section>
+    <!---------------------------------- Dotted lines ------------------------------------->
+
+    <div>
+      <img src="images/dotted_lines.svg" alt="dotted_lines" />
+    </div>
+
+    <!---------------------------------- Experience ------------------------------------->
+
+    <section class="experience section container" id="experience">
+      <div class="experience__container bd-grid">
+        <div class="experience__data">
+          <h2 class="experience__title">
+            Some Things <strong>I’ve learn</strong>
+          </h2>
+          <p class="experience__text">
+            There are a number of technologies that allow developers to
+            quickly create efficient and aesthetically appealing applications.
+            Here are some of these technologies or programming languages that
+            <strong class="alert"
+              >I currently use for frontend web development.</strong
+            >
+          </p>
+        </div>
+
+        <div class="experience__buttons">
+          <button class="experience__btn active" data-id="base">Base</button>
+          <button class="experience__btn" data-id="framework">
+            Framework CSS
+          </button>
+          <button class="experience__btn" data-id="library">Library</button>
+          <button class="experience__btn" data-id="platform">Platform</button>
+        </div>
+
+        <!-- experience-1 -->
+        <div class="experience__experience" id="experience-1">
+          <div>
+            <img src="images/html-5.svg" class="icon-img" alt="html5-image" />
+            <p class="text-center">HTML 5</p>
+          </div>
+          <div>
+            <img src="images/css3.svg" class="icon-img" alt="ccs-img" />
+            <p class="text-center">CSS 3</p>
+          </div>
+          <div>
+            <img src="images/javascript.svg" class="icon-img" alt="js-img" />
+            <p class="text-center">Javascript</p>
+          </div>
+        </div>
+
+        <!-- experience-2 -->
+        <div class="experience__experience d-none" id="experience-2">
+          <div>
+            <img
+              src="images/bootstrap.svg"
+              class="icon-img"
+              alt="Boostrap-img"
+            />
+            <p class="text-center">Boostrap</p>
+          </div>
+          <div>
+            <img
+              src="images/tailwind-css.svg"
+              class="icon-img"
+              alt="tailwind logo"
+            />
+            <p class="text-center">Tailwind</p>
+          </div>
+          <div>
+            <img src="images/sass.svg" class="icon-img" alt="sass-logo" />
+            <p class="text-center">Sass</p>
+          </div>
+        </div>
+
+        <!-- experience-3 -->
+        <div class="experience__experience d-none" id="experience-3">
+          <div>
+            <img src="images/react.svg" class="icon-img" />
+            <p class="text-center">React JS</p>
+          </div>
+        </div>
+
+        <!-- experience-4 -->
+        <div class="experience__experience d-none" id="experience-4">
+          <div>
+            <img src="images/git.svg" class="icon-img" alt="git-logo" />
+            <p class="text-center">Git</p>
+          </div>
+
+          <div>
+            <img
+              src="images/firebase.svg"
+              class="icon-img"
+              alt="firebase-logo"
+            />
+            <p class="text-center">Firebase</p>
+          </div>
+          <div>
+            <img src="images/github.svg" class="icon-img" alt="githublogo" />
+            <p class="text-center">GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------- Dotted lines ------------------------------------->
+
+    <div>
+      <img src="images/dotted_lines.svg" alt="dotted_lines" />
+    </div>
+
+    <!---------------------------------- Contact  ------------------------------------->
+
+    <section class="contact section container" id="contact">
+      <div class="contact__container bd-grid">
+        <div class="contact__data">
+          <p class="contact__subtitle">What's Next?</p>
+          <h2 class="contact__title"><strong>Get in touch!</strong></h2>
+          <p class="contact__text">
+            I’m currently looking for any new opportunities, my inbox is always
+            open. Whether you have a question or just want to say hi,
+            <strong class="alert">I’ll try my best to get back to you!</strong>
+          </p>
+        </div>
+        <a
+          class="hero__btn"
+          href="mailto:reynaldo.bjsz@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Say Hi!</a
+        >
+      </div>
+    </section>
+    <!---------------------------------- Footer  ------------------------------------->
+
+    <footer class="footer">
+      <a href="https://www.linkedin.com/in/reynaldo-bejarano/" target="_blank"
+        >Designed & Built by Reynaldo Bejarano</a
+      >
+    </footer>
+  </body>
+</html>
